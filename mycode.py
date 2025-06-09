@@ -27,6 +27,12 @@ os.makedirs(data_dir,exist_ok=True)  ## if already a file exists with this name 
 # Define the path
 file_path=os.path.join(data_dir,'sample_data.csv')
 
+
+
+## Add new row to df for V2
+new_row_loc={"id": 11, "name": "Palak", "age": 19, "city": "Jaipur"}
+df.loc[len(df.index)]=new_row_loc
+
 # Save the Dataframe to csv file , including column names
 df.to_csv(file_path,index=False)
 
