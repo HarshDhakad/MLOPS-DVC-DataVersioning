@@ -33,6 +33,12 @@ file_path=os.path.join(data_dir,'sample_data.csv')
 new_row_loc={"id": 11, "name": "Palak", "age": 19, "city": "Jaipur"}
 df.loc[len(df.index)]=new_row_loc
 
+
+## Add new row to df for V3
+new_row_loc={"id": 12, "name": "Gurushi", "age": 19, "city": "Jaipur"}
+df.loc[len(df.index)]=new_row_loc
+
+
 # Save the Dataframe to csv file , including column names
 df.to_csv(file_path,index=False)
 
